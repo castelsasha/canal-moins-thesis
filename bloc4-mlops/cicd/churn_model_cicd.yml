@@ -1,0 +1,243 @@
+# Canal Moins — CI/CD Pipeline
+# .github/workflows/churn_model_cicd.yml
+# Block 4 — MLOps & Production | JHEDA Master Thesis
+#
+# Triggers on every push to main branch:
+#   1. Run tests
+#   2. Train model
+#   3. Evaluate — block deploy if AUC < 0.80
+#   4. Build Docker image
+#   5. Deploy API
+#   6. Run smoke test
+
+name: Canal Moins — Churn Model CI/CD
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'bloc4-mlops/**'
+      - '.github/workflows/churn_model_cicd.yml'
+  pull_request:
+    branches: [main, master]
+  schedule:
+    # Retrain every Sunday at 02:00 UTC
+    - cron: '0 2 * * 0'
+  workflow_dispatch:
+    inputs:
+      force_retrain:
+        description: 'Force model retraining'
+        required: false
+        default: 'false'
+
+env:
+  PYTHON_VERSION: '3.11'
+  MODEL_VERSION: '1.0.0'
+  AUC_THRESHOLD: '0.80'
+  DOCKER_IMAGE: 'canal-moins-churn-api'
+
+jobs:
+
+  # ── JOB 1: TESTS ───────────────────────────────────────────────
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          cd bloc4-mlops
+          pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: |
+          cd bloc4-mlops
+          pytest tests/ -v --tb=short
+
+      - name: Test API health endpoint
+        run: |
+          cd bloc4-mlops
+          uvicorn api.main:app --host 0.0.0.0 --port 8000 &
+          sleep 5
+          curl -f http://localhost:8000/health
+          kill %1
+
+  # ── JOB 2: TRAIN ───────────────────────────────────────────────
+  train:
+    name: Train Model
+    runs-on: ubuntu-latest
+    needs: test
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          cd bloc4-mlops
+          pip install -r requirements.txt
+
+      - name: Train XGBoost model
+        run: |
+          cd bloc4-mlops
+          python src/train.py
+
+      - name: Upload model artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: churn-model-${{ github.sha }}
+          path: |
+            bloc4-mlops/models/churn_model.pkl
+            bloc4-mlops/models/metrics.json
+            bloc4-mlops/models/feature_importance.json
+          retention-days: 30
+
+  # ── JOB 3: EVALUATE ────────────────────────────────────────────
+  evaluate:
+    name: Evaluate Model Quality Gate
+    runs-on: ubuntu-latest
+    needs: train
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download model artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: churn-model-${{ github.sha }}
+          path: bloc4-mlops/models/
+
+      - name: Check AUC threshold
+        run: |
+          cd bloc4-mlops
+          python - <<'EOF'
+          import json, sys
+
+          with open("models/metrics.json") as f:
+              metrics = json.load(f)
+
+          auc = metrics["auc_roc"]
+          threshold = float("${{ env.AUC_THRESHOLD }}")
+
+          print(f"Model AUC-ROC: {auc}")
+          print(f"Required threshold: {threshold}")
+
+          if auc < threshold:
+              print(f"❌ QUALITY GATE FAILED: AUC {auc} < {threshold}")
+              print("Deployment blocked. Retrain with more data.")
+              sys.exit(1)
+          else:
+              print(f"✅ QUALITY GATE PASSED: AUC {auc} >= {threshold}")
+          EOF
+
+      - name: Post metrics as PR comment
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const metrics = JSON.parse(
+              fs.readFileSync('bloc4-mlops/models/metrics.json')
+            );
+            const body = `## 🤖 Churn Model Evaluation Results
+            | Metric | Value |
+            |--------|-------|
+            | AUC-ROC | ${metrics.auc_roc} |
+            | F1 Score | ${metrics.f1_score} |
+            | Precision | ${metrics.precision} |
+            | Recall | ${metrics.recall} |
+            | Train size | ${metrics.train_size} |
+            `;
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body
+            });
+
+  # ── JOB 4: BUILD & DEPLOY ──────────────────────────────────────
+  deploy:
+    name: Build Docker + Deploy API
+    runs-on: ubuntu-latest
+    needs: evaluate
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download model artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: churn-model-${{ github.sha }}
+          path: bloc4-mlops/models/
+
+      - name: Build Docker image
+        run: |
+          cd bloc4-mlops
+          docker build -t ${{ env.DOCKER_IMAGE }}:${{ github.sha }} .
+          docker tag ${{ env.DOCKER_IMAGE }}:${{ github.sha }} \
+                     ${{ env.DOCKER_IMAGE }}:latest
+
+      - name: Start container
+        run: |
+          docker run -d \
+            --name canal-moins-churn-api \
+            -p 8000:8000 \
+            ${{ env.DOCKER_IMAGE }}:latest
+
+      - name: Wait for API to start
+        run: sleep 10
+
+      - name: Smoke test — health check
+        run: |
+          curl -f http://localhost:8000/health
+          echo "✅ Health check passed"
+
+      - name: Smoke test — prediction endpoint
+        run: |
+          curl -X POST http://localhost:8000/predict \
+            -H "Content-Type: application/json" \
+            -d '{
+              "subscriber_id": "smoke_test_001",
+              "total_sessions_30d": 5,
+              "total_watch_time_h": 8.0,
+              "avg_completion_rate": 0.65,
+              "avg_engagement_score": 55.0,
+              "days_since_last_watch": 7,
+              "sessions_last_7d": 2,
+              "unique_content_count": 4,
+              "plan_type": "plus",
+              "country": "FR",
+              "favourite_device": "smart_tv"
+            }' | python3 -c "
+          import sys, json
+          r = json.load(sys.stdin)
+          assert 'churn_probability' in r
+          assert 0 <= r['churn_probability'] <= 1
+          print(f'✅ Prediction smoke test passed: {r[\"churn_probability\"]:.4f}')
+          "
+
+      - name: Tag release
+        if: success()
+        run: |
+          echo "🚀 Deployment successful!"
+          echo "Model version: ${{ env.MODEL_VERSION }}"
+          echo "Git SHA: ${{ github.sha }}"
+          echo "Image: ${{ env.DOCKER_IMAGE }}:${{ github.sha }}"
