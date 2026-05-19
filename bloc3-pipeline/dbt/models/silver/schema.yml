@@ -1,0 +1,71 @@
+# Canal Moins — dbt Schema Tests
+# models/silver/schema.yml
+
+version: 2
+
+sources:
+  - name: bronze
+    description: "Canal Moins Bronze layer — raw ingested events"
+    tables:
+      - name: bronze_viewing_events
+        description: "Raw viewing events from streaming app"
+        columns:
+          - name: event_id
+            description: "Unique event identifier (UUID)"
+            tests:
+              - unique
+              - not_null
+          - name: subscriber_id
+            description: "Subscriber identifier"
+            tests:
+              - not_null
+          - name: completion_pct
+            description: "Viewing completion percentage (0-1)"
+            tests:
+              - not_null
+              - dbt_utils.accepted_range:
+                  min_value: 0
+                  max_value: 1
+          - name: country
+            description: "Subscriber country code"
+            tests:
+              - accepted_values:
+                  values: ['FR', 'BE', 'CH', 'LU']
+
+models:
+  - name: stg_viewing_events
+    description: "Cleaned and enriched viewing events — Silver layer"
+    columns:
+      - name: event_id
+        tests:
+          - unique
+          - not_null
+      - name: subscriber_id
+        tests:
+          - not_null
+      - name: watch_category
+        tests:
+          - accepted_values:
+              values: ['completed', 'partial', 'abandoned', 'no_watch']
+      - name: engagement_score
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 100
+
+  - name: gold_churn_features
+    description: "Per-subscriber churn features — Gold layer (feeds ML model)"
+    columns:
+      - name: subscriber_id
+        tests:
+          - unique
+          - not_null
+      - name: churn_risk_label
+        tests:
+          - accepted_values:
+              values: ['low', 'medium', 'high']
+      - name: avg_completion_rate
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 1
