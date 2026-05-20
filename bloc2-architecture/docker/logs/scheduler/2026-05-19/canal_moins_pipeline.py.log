@@ -1,0 +1,432 @@
+[2026-05-19T16:00:01.384+0000] {processor.py:161} INFO - Started process (PID=1349) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:00:01.386+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:00:01.390+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:00:01.388+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:00:01.498+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:00:01.836+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:00:01.835+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:00:01.874+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:00:01.874+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 15:45:00+00:00, run_after=2026-05-19 16:00:00+00:00
+[2026-05-19T16:00:01.901+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.527 seconds
+[2026-05-19T16:00:32.266+0000] {processor.py:161} INFO - Started process (PID=1360) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:00:32.268+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:00:32.271+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:00:32.271+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:00:32.316+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:00:32.351+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:00:32.351+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:00:32.376+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:00:32.376+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 15:45:00+00:00, run_after=2026-05-19 16:00:00+00:00
+[2026-05-19T16:00:32.411+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.150 seconds
+[2026-05-19T16:01:02.544+0000] {processor.py:161} INFO - Started process (PID=1372) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:01:02.546+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:01:02.547+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:01:02.547+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:01:02.601+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:01:02.687+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:01:02.687+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:01:02.721+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:01:02.721+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 15:45:00+00:00, run_after=2026-05-19 16:00:00+00:00
+[2026-05-19T16:01:02.747+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.207 seconds
+[2026-05-19T16:01:32.962+0000] {processor.py:161} INFO - Started process (PID=1389) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:01:32.965+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:01:32.967+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:01:32.967+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:01:33.034+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:01:33.143+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:01:33.142+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:01:33.311+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.356 seconds
+[2026-05-19T16:02:03.672+0000] {processor.py:161} INFO - Started process (PID=1418) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:02:03.673+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:02:03.675+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:02:03.675+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:02:03.709+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:02:03.749+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:02:03.749+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:02:03.781+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:02:03.781+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:02:03.819+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.151 seconds
+[2026-05-19T16:02:33.937+0000] {processor.py:161} INFO - Started process (PID=1429) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:02:33.939+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:02:33.940+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:02:33.940+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:02:33.978+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:02:34.025+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:02:34.024+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:02:34.059+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:02:34.058+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:02:34.104+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.171 seconds
+[2026-05-19T16:03:04.460+0000] {processor.py:161} INFO - Started process (PID=1440) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:03:04.463+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:03:04.466+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:03:04.465+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:03:04.524+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:03:04.574+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:03:04.573+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:03:04.622+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:03:04.622+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:03:04.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.206 seconds
+[2026-05-19T16:03:34.757+0000] {processor.py:161} INFO - Started process (PID=1450) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:03:34.759+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:03:34.762+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:03:34.762+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:03:34.799+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:03:34.848+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:03:34.848+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:03:34.876+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:03:34.876+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:03:34.901+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.149 seconds
+[2026-05-19T16:04:05.024+0000] {processor.py:161} INFO - Started process (PID=1461) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:04:05.026+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:04:05.027+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:04:05.027+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:04:05.059+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:04:05.092+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:04:05.092+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:04:05.128+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:04:05.128+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:04:05.168+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.147 seconds
+[2026-05-19T16:04:35.396+0000] {processor.py:161} INFO - Started process (PID=1472) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:04:35.397+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:04:35.399+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:04:35.399+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:04:35.435+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:04:35.470+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:04:35.470+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:04:35.498+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:04:35.497+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:04:35.519+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.127 seconds
+[2026-05-19T16:05:05.794+0000] {processor.py:161} INFO - Started process (PID=1483) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:05:05.797+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:05:05.799+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:05:05.799+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:05:05.830+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:05:05.857+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:05:05.857+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:05:05.879+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:05:05.879+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:05:05.900+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.110 seconds
+[2026-05-19T16:05:36.058+0000] {processor.py:161} INFO - Started process (PID=1495) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:05:36.060+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:05:36.061+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:05:36.061+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:05:36.097+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:05:36.134+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:05:36.134+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:05:36.163+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:05:36.163+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:05:36.190+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.136 seconds
+[2026-05-19T16:06:06.481+0000] {processor.py:161} INFO - Started process (PID=1506) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:06:06.484+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:06:06.486+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:06:06.485+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:06:06.523+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:06:06.560+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:06:06.559+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:06:06.586+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:06:06.586+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:06:06.614+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.137 seconds
+[2026-05-19T16:06:36.770+0000] {processor.py:161} INFO - Started process (PID=1516) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:06:36.772+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:06:36.773+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:06:36.773+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:06:36.805+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:06:36.850+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:06:36.850+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:06:36.876+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:06:36.876+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:06:36.900+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.133 seconds
+[2026-05-19T16:07:07.171+0000] {processor.py:161} INFO - Started process (PID=1527) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:07:07.173+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:07:07.174+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:07:07.173+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:07:07.203+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:07:07.233+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:07:07.233+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:07:07.258+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:07:07.258+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:07:07.277+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.109 seconds
+[2026-05-19T16:07:37.500+0000] {processor.py:161} INFO - Started process (PID=1537) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:07:37.502+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:07:37.503+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:07:37.503+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:07:37.533+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:07:37.569+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:07:37.569+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:07:37.604+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:07:37.604+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:07:37.635+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.139 seconds
+[2026-05-19T16:08:07.801+0000] {processor.py:161} INFO - Started process (PID=1548) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:08:07.802+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:08:07.804+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:08:07.803+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:08:07.840+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:08:07.886+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:08:07.886+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:08:07.920+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:08:07.920+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:08:07.959+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.161 seconds
+[2026-05-19T16:08:38.182+0000] {processor.py:161} INFO - Started process (PID=1559) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:08:38.183+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:08:38.185+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:08:38.184+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:08:38.220+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:08:38.254+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:08:38.254+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:08:38.283+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:08:38.283+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:08:38.310+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.132 seconds
+[2026-05-19T16:09:08.514+0000] {processor.py:161} INFO - Started process (PID=1571) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:09:08.516+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:09:08.517+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:09:08.517+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:09:08.549+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:09:08.577+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:09:08.577+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:09:08.602+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:09:08.602+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:09:08.622+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.111 seconds
+[2026-05-19T16:09:38.989+0000] {processor.py:161} INFO - Started process (PID=1582) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:09:38.991+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:09:38.993+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:09:38.992+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:09:39.040+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:09:39.093+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:09:39.093+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:09:39.143+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:09:39.143+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:09:39.186+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.204 seconds
+[2026-05-19T16:10:09.272+0000] {processor.py:161} INFO - Started process (PID=1593) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:10:09.274+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:10:09.275+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:10:09.275+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:10:09.307+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:10:09.336+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:10:09.335+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:10:09.375+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:10:09.375+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:10:09.395+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.126 seconds
+[2026-05-19T16:10:39.598+0000] {processor.py:161} INFO - Started process (PID=1604) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:10:39.599+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:10:39.601+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:10:39.600+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:10:39.630+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:10:39.661+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:10:39.660+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:10:39.684+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:10:39.684+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:10:39.716+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.122 seconds
+[2026-05-19T16:11:09.928+0000] {processor.py:161} INFO - Started process (PID=1615) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:11:09.929+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:11:09.930+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:11:09.930+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:11:09.964+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:11:09.997+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:11:09.997+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:11:10.026+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:11:10.026+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:11:10.049+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.125 seconds
+[2026-05-19T16:11:40.281+0000] {processor.py:161} INFO - Started process (PID=1626) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:11:40.286+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:11:40.291+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:11:40.289+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:11:40.368+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:11:40.462+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:11:40.461+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:11:40.507+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:11:40.507+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:11:40.554+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.281 seconds
+[2026-05-19T16:12:10.859+0000] {processor.py:161} INFO - Started process (PID=1637) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:12:10.861+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:12:10.863+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:12:10.863+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:12:10.900+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:12:10.953+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:12:10.952+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:12:11.000+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:12:11.000+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:12:11.027+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.172 seconds
+[2026-05-19T16:12:41.148+0000] {processor.py:161} INFO - Started process (PID=1648) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:12:41.149+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:12:41.152+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:12:41.151+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:12:41.193+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:12:41.234+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:12:41.234+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:12:41.263+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:12:41.263+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:12:41.294+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.150 seconds
+[2026-05-19T16:13:11.684+0000] {processor.py:161} INFO - Started process (PID=1659) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:13:11.688+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:13:11.692+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:13:11.691+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:13:11.769+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:13:11.818+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:13:11.818+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:13:11.847+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:13:11.847+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:13:11.880+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.202 seconds
+[2026-05-19T16:13:42.210+0000] {processor.py:161} INFO - Started process (PID=1670) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:13:42.211+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:13:42.212+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:13:42.212+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:13:42.246+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:13:42.285+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:13:42.284+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:13:42.314+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:13:42.314+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:13:42.351+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.145 seconds
+[2026-05-19T16:14:12.588+0000] {processor.py:161} INFO - Started process (PID=1680) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:14:12.594+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:14:12.598+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:14:12.598+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:14:12.623+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:14:12.652+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:14:12.652+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:14:12.688+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:14:12.688+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:14:12.730+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.145 seconds
+[2026-05-19T16:14:42.900+0000] {processor.py:161} INFO - Started process (PID=1691) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:14:42.901+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:14:42.903+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:14:42.902+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:14:42.934+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:14:42.967+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:14:42.967+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:14:42.994+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:14:42.994+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:00:00+00:00, run_after=2026-05-19 16:15:00+00:00
+[2026-05-19T16:14:43.024+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.128 seconds
+[2026-05-19T16:15:13.389+0000] {processor.py:161} INFO - Started process (PID=1714) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:15:13.390+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:15:13.391+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:15:13.391+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:15:13.416+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:15:13.449+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:15:13.449+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:15:13.481+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:15:13.481+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:15:13.508+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.122 seconds
+[2026-05-19T16:15:43.625+0000] {processor.py:161} INFO - Started process (PID=1725) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:15:43.626+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:15:43.627+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:15:43.627+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:15:43.656+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:15:43.689+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:15:43.689+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:15:43.732+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:15:43.731+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:15:43.753+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.131 seconds
+[2026-05-19T16:16:14.028+0000] {processor.py:161} INFO - Started process (PID=1735) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:16:14.030+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:16:14.031+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:16:14.031+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:16:14.075+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:16:14.110+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:16:14.109+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:16:14.134+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:16:14.133+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:16:14.159+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.133 seconds
+[2026-05-19T16:16:44.315+0000] {processor.py:161} INFO - Started process (PID=1746) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:16:44.317+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:16:44.318+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:16:44.318+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:16:44.351+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:16:44.390+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:16:44.390+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:16:44.419+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:16:44.419+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:16:44.448+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.136 seconds
+[2026-05-19T16:17:14.707+0000] {processor.py:161} INFO - Started process (PID=1756) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:17:14.708+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:17:14.710+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:17:14.709+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:17:14.773+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:17:14.813+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:17:14.813+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:17:14.850+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:17:14.849+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:17:14.881+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.178 seconds
+[2026-05-19T16:17:44.982+0000] {processor.py:161} INFO - Started process (PID=1767) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:17:44.984+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:17:44.985+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:17:44.985+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:17:45.018+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:17:45.058+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:17:45.058+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:17:45.091+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:17:45.091+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:17:45.130+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.152 seconds
+[2026-05-19T16:18:15.213+0000] {processor.py:161} INFO - Started process (PID=1778) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:18:15.215+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:18:15.216+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:18:15.216+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:18:15.246+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:18:15.289+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:18:15.288+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:18:15.334+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:18:15.334+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:18:15.368+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.158 seconds
+[2026-05-19T16:18:45.638+0000] {processor.py:161} INFO - Started process (PID=1789) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:18:45.639+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:18:45.640+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:18:45.640+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:18:45.679+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:18:45.723+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:18:45.722+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:18:45.749+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:18:45.749+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:18:45.775+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.140 seconds
+[2026-05-19T16:19:15.919+0000] {processor.py:161} INFO - Started process (PID=1800) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:19:15.920+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:19:15.921+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:19:15.921+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:19:15.951+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:19:15.983+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:19:15.983+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:19:16.011+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:19:16.011+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:19:16.039+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.123 seconds
+[2026-05-19T16:19:46.264+0000] {processor.py:161} INFO - Started process (PID=1811) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:19:46.265+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:19:46.266+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:19:46.266+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:19:46.292+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:19:46.320+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:19:46.319+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:19:46.344+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:19:46.344+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:19:46.368+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.108 seconds
+[2026-05-19T16:20:16.594+0000] {processor.py:161} INFO - Started process (PID=1822) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:20:16.596+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:20:16.597+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:20:16.597+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:20:16.632+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:20:16.661+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:20:16.661+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:20:16.687+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:20:16.687+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:20:16.713+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.121 seconds
+[2026-05-19T16:20:47.036+0000] {processor.py:161} INFO - Started process (PID=1833) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:20:47.038+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:20:47.041+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:20:47.040+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:20:47.091+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:20:47.138+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:20:47.138+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:20:47.181+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:20:47.181+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:20:47.217+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.186 seconds
+[2026-05-19T16:21:17.445+0000] {processor.py:161} INFO - Started process (PID=1844) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:21:17.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:21:17.449+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:21:17.449+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:21:17.536+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:21:17.602+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:21:17.602+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:21:17.656+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:21:17.655+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:21:17.712+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.273 seconds
+[2026-05-19T16:21:48.402+0000] {processor.py:161} INFO - Started process (PID=1855) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:21:48.404+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:21:48.406+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:21:48.406+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:21:48.514+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:21:48.595+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:21:48.594+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:21:48.715+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:21:48.715+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:21:48.857+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.462 seconds
+[2026-05-19T16:22:19.472+0000] {processor.py:161} INFO - Started process (PID=1866) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:22:19.478+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:22:19.480+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:22:19.480+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:22:19.580+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:22:19.698+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:22:19.698+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:22:19.792+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:22:19.791+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:22:19.872+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.412 seconds
+[2026-05-19T16:22:50.372+0000] {processor.py:161} INFO - Started process (PID=1877) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:22:50.374+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:22:50.376+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:22:50.375+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:22:50.421+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:22:50.475+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:22:50.475+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:22:50.525+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:22:50.525+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:22:50.567+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.200 seconds
+[2026-05-19T16:23:20.858+0000] {processor.py:161} INFO - Started process (PID=1888) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:23:20.860+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:23:20.862+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:23:20.862+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:23:20.904+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:23:20.958+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:23:20.957+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:23:21.003+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:23:21.003+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:23:21.038+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.188 seconds
+[2026-05-19T16:23:51.694+0000] {processor.py:161} INFO - Started process (PID=1899) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:23:51.698+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:23:51.702+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:23:51.701+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:23:51.806+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:23:52.014+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:23:52.013+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:23:52.188+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:23:52.185+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:23:52.330+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.645 seconds
+[2026-05-19T16:24:23.001+0000] {processor.py:161} INFO - Started process (PID=1910) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:24:23.004+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:24:23.009+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:24:23.007+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:24:23.126+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:24:23.280+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:24:23.278+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:24:23.450+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:24:23.448+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:24:23.632+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.640 seconds
+[2026-05-19T16:24:54.460+0000] {processor.py:161} INFO - Started process (PID=1921) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:24:54.465+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:24:54.468+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:24:54.467+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:24:54.575+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:24:54.720+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:24:54.719+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:24:54.924+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:24:54.923+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:24:55.096+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.648 seconds
+[2026-05-19T16:25:25.740+0000] {processor.py:161} INFO - Started process (PID=1932) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:25:25.744+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:25:25.753+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:25:25.751+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:25:25.878+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:25:26.042+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:25:26.040+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:25:26.223+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:25:26.221+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:25:26.371+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.647 seconds
+[2026-05-19T16:25:56.847+0000] {processor.py:161} INFO - Started process (PID=1943) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:25:56.858+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:25:56.867+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:25:56.864+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:25:57.082+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:25:57.325+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:25:57.322+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:25:57.579+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:25:57.577+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:25:57.732+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.902 seconds
+[2026-05-19T16:26:28.343+0000] {processor.py:161} INFO - Started process (PID=1954) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:26:28.349+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:26:28.356+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:26:28.354+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:26:28.460+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:26:28.568+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:26:28.567+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:26:28.658+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:26:28.657+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:26:28.782+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.447 seconds
+[2026-05-19T16:26:59.527+0000] {processor.py:161} INFO - Started process (PID=1971) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:26:59.531+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:26:59.536+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:26:59.534+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:26:59.651+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:26:59.767+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:26:59.766+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:26:59.921+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:26:59.920+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:27:00.055+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.540 seconds
+[2026-05-19T16:27:30.423+0000] {processor.py:161} INFO - Started process (PID=1982) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:27:30.427+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:27:30.431+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:27:30.430+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:27:30.549+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:27:30.739+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:27:30.737+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:27:30.949+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:27:30.948+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:27:31.073+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.664 seconds
+[2026-05-19T16:28:01.619+0000] {processor.py:161} INFO - Started process (PID=1994) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:28:01.622+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:28:01.624+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:28:01.624+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:28:01.678+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:28:01.740+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:28:01.740+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:28:01.793+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:28:01.793+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:28:01.858+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.247 seconds
+[2026-05-19T16:28:32.057+0000] {processor.py:161} INFO - Started process (PID=2005) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:28:32.067+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:28:32.070+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:28:32.069+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:28:32.141+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:28:32.220+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:28:32.219+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:28:32.338+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:28:32.337+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:28:32.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.372 seconds
+[2026-05-19T16:29:02.927+0000] {processor.py:161} INFO - Started process (PID=2015) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:29:02.931+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:29:02.934+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:29:02.933+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:29:03.021+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:29:03.108+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:29:03.108+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:29:03.192+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:29:03.191+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:29:03.295+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.376 seconds
+[2026-05-19T16:29:33.949+0000] {processor.py:161} INFO - Started process (PID=2026) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:29:33.956+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:29:33.965+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:29:33.962+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:29:34.121+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:29:34.334+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:29:34.333+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:29:34.484+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:29:34.483+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:15:00+00:00, run_after=2026-05-19 16:30:00+00:00
+[2026-05-19T16:29:34.606+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.677 seconds
+[2026-05-19T16:30:05.157+0000] {processor.py:161} INFO - Started process (PID=2041) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:30:05.159+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:30:05.163+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:30:05.162+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:30:05.244+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:30:05.337+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:30:05.336+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:30:05.478+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.328 seconds
+[2026-05-19T16:30:35.794+0000] {processor.py:161} INFO - Started process (PID=2060) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:30:35.800+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:30:35.805+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:30:35.804+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:30:35.963+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:30:36.074+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:30:36.073+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-19T16:30:36.161+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:30:36.161+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-19 16:30:00+00:00, run_after=2026-05-19 16:45:00+00:00
+[2026-05-19T16:30:36.248+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 0.466 seconds
+[2026-05-19T16:31:06.715+0000] {processor.py:161} INFO - Started process (PID=2072) to work on /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-19T16:31:06.734+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/canal_moins_pipeline.py for tasks to queue
+[2026-05-19T16:31:06.748+0000] {logging_mixin.py:188} INFO - [2026-05-19T16:31:06.746+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-20T01:08:51.035+0000] {processor.py:840} INFO - DAG(s) 'canal_moins_viewing_events_pipeline' retrieved from /opt/airflow/dags/canal_moins_pipeline.py
+[2026-05-20T01:08:51.435+0000] {logging_mixin.py:188} INFO - [2026-05-20T01:08:51.434+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-20T01:08:51.629+0000] {logging_mixin.py:188} INFO - [2026-05-20T01:08:51.628+0000] {dag.py:3823} INFO - Setting next_dagrun for canal_moins_viewing_events_pipeline to 2026-05-20 00:45:00+00:00, run_after=2026-05-20 01:00:00+00:00
+[2026-05-20T01:08:52.582+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/canal_moins_pipeline.py took 1.999 seconds

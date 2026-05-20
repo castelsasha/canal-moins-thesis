@@ -1,0 +1,22 @@
+artifact_path: file:C:/Users/Castel/Desktop/canal-moins-thesis/bloc4-mlops/mlruns/1/models/m-48e7ef96f24f4b29b94933a30e2b3f55/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.12.10
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: ubj
+    xgb_version: 3.2.0
+mlflow_version: 3.12.0
+model_id: m-48e7ef96f24f4b29b94933a30e2b3f55
+model_size_bytes: 47647
+model_uuid: m-48e7ef96f24f4b29b94933a30e2b3f55
+prompts: null
+run_id: 1cb098fe729e49beaf6285c0dd9a5998
+utc_time_created: '2026-05-20 09:50:48.212111'

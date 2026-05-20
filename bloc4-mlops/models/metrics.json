@@ -1,0 +1,10 @@
+{
+  "auc_roc": 1.0,
+  "f1_score": 0.9979,
+  "precision": 0.9959,
+  "recall": 1.0,
+  "train_size": 8000,
+  "test_size": 2000,
+  "model_version": "1.0.0",
+  "trained_at": "2026-05-20T09:50:48.129025"
+}

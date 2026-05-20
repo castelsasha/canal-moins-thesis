@@ -1,0 +1,18 @@
+[2026-05-20T01:45:09.907+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: canal_moins_viewing_events_pipeline.compute_churn_features scheduled__2026-05-20T01:30:00+00:00 [queued]>
+[2026-05-20T01:45:09.950+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: canal_moins_viewing_events_pipeline.compute_churn_features scheduled__2026-05-20T01:30:00+00:00 [queued]>
+[2026-05-20T01:45:09.953+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-05-20T01:45:10.013+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): compute_churn_features> on 2026-05-20 01:30:00+00:00
+[2026-05-20T01:45:10.028+0000] {standard_task_runner.py:60} INFO - Started process 2584 to run task
+[2026-05-20T01:45:10.040+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'canal_moins_viewing_events_pipeline', 'compute_churn_features', 'scheduled__2026-05-20T01:30:00+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/canal_moins_pipeline.py', '--cfg-path', '/tmp/tmpzlshlq92']
+[2026-05-20T01:45:10.048+0000] {standard_task_runner.py:88} INFO - Job 48: Subtask compute_churn_features
+[2026-05-20T01:45:10.284+0000] {task_command.py:423} INFO - Running <TaskInstance: canal_moins_viewing_events_pipeline.compute_churn_features scheduled__2026-05-20T01:30:00+00:00 [running]> on host c0d6bab3a033
+[2026-05-20T01:45:10.617+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='canal-moins-data-team' AIRFLOW_CTX_DAG_ID='canal_moins_viewing_events_pipeline' AIRFLOW_CTX_TASK_ID='compute_churn_features' AIRFLOW_CTX_EXECUTION_DATE='2026-05-20T01:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-20T01:30:00+00:00'
+[2026-05-20T01:45:10.622+0000] {canal_moins_pipeline.py:409} INFO - 🧠 Computing churn features for Gold layer...
+[2026-05-20T01:45:10.865+0000] {canal_moins_pipeline.py:492} INFO -   Churn medium: 84 subscribers
+[2026-05-20T01:45:10.869+0000] {canal_moins_pipeline.py:492} INFO -   Churn high: 103 subscribers
+[2026-05-20T01:45:10.873+0000] {canal_moins_pipeline.py:492} INFO -   Churn low: 78 subscribers
+[2026-05-20T01:45:10.880+0000] {canal_moins_pipeline.py:497} INFO - ✅ Gold layer: 100 churn feature records computed
+[2026-05-20T01:45:10.951+0000] {python.py:201} INFO - Done. Returned value was: 100
+[2026-05-20T01:45:11.054+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=canal_moins_viewing_events_pipeline, task_id=compute_churn_features, execution_date=20260520T013000, start_date=20260520T014509, end_date=20260520T014511
+[2026-05-20T01:45:11.185+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-05-20T01:45:11.327+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

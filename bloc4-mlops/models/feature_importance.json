@@ -1,0 +1,17 @@
+{
+  "total_sessions_30d": 0.5166190266609192,
+  "sessions_per_day": 0.41979482769966125,
+  "unique_content_count": 0.04173152148723602,
+  "total_watch_time_h": 0.011078951880335808,
+  "recency_x_frequency": 0.004760334268212318,
+  "sessions_last_7d": 0.003611795837059617,
+  "avg_engagement_score": 0.001239188015460968,
+  "avg_completion_rate": 0.001164338318631053,
+  "days_since_last_watch": 0.0,
+  "plan_type_enc": 0.0,
+  "country_enc": 0.0,
+  "device_enc": 0.0,
+  "watch_per_session_h": 0.0,
+  "is_elite": 0.0,
+  "is_mobile_first": 0.0
+}

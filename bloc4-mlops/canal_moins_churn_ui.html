@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canal Moins — Churn Prediction</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F5F5F5; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 2rem; }
+    .container { background: #fff; border-radius: 16px; padding: 2rem; max-width: 640px; width: 100%; box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+    .header { display: flex; align-items: center; gap: 12px; margin-bottom: 1.5rem; }
+    .logo { width: 44px; height: 44px; background: #0A0A0A; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 700; color: #00C97B; flex-shrink: 0; }
+    .title { font-size: 20px; font-weight: 600; color: #0A0A0A; }
+    .subtitle { font-size: 13px; color: #888; margin-top: 2px; }
+    .section-label { font-size: 11px; font-weight: 600; color: #aaa; text-transform: uppercase; letter-spacing: 0.8px; margin: 1.2rem 0 0.6rem; }
+    .divider { border: none; border-top: 1px solid #F0F0F0; margin: 1rem 0; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+    .field { display: flex; flex-direction: column; gap: 5px; margin-bottom: 12px; }
+    .field label { font-size: 12px; color: #666; font-weight: 500; }
+    .field input, .field select {
+      padding: 9px 12px; border: 1.5px solid #E8E8E8; border-radius: 8px;
+      font-size: 14px; color: #0A0A0A; background: #FAFAFA; outline: none;
+      transition: border-color 0.15s;
+    }
+    .field input:focus, .field select:focus { border-color: #00C97B; background: #fff; }
+    .btn {
+      width: 100%; padding: 13px; background: #0A0A0A; color: #fff;
+      border: none; border-radius: 10px; font-size: 15px; font-weight: 600;
+      cursor: pointer; margin-top: 4px; transition: background 0.15s;
+    }
+    .btn:hover { background: #222; }
+    .btn:disabled { background: #ccc; cursor: not-allowed; }
+    .result { border-radius: 12px; padding: 1.25rem; margin-top: 1.2rem; display: none; }
+    .result.high { background: #FFF0F0; border: 1.5px solid #FFCCCC; }
+    .result.medium { background: #FFFBF0; border: 1.5px solid #FFE4A0; }
+    .result.low { background: #F0FFF8; border: 1.5px solid #A0EED0; }
+    .result-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+    .risk-badge { font-size: 13px; font-weight: 700; padding: 4px 14px; border-radius: 20px; }
+    .high .risk-badge { background: #E24B4A; color: #fff; }
+    .medium .risk-badge { background: #EF9F27; color: #fff; }
+    .low .risk-badge { background: #1D9E75; color: #fff; }
+    .prob-big { font-size: 36px; font-weight: 700; }
+    .high .prob-big { color: #E24B4A; }
+    .medium .prob-big { color: #BA7517; }
+    .low .prob-big { color: #0F6E56; }
+    .bar-wrap { background: #E8E8E8; border-radius: 4px; height: 8px; overflow: hidden; margin-bottom: 10px; }
+    .bar { height: 8px; border-radius: 4px; transition: width 0.6s ease; }
+    .high .bar { background: #E24B4A; }
+    .medium .bar { background: #EF9F27; }
+    .low .bar { background: #1D9E75; }
+    .rec { font-size: 14px; color: #333; font-weight: 500; margin-bottom: 6px; }
+    .meta { font-size: 12px; color: #aaa; }
+    .error { background: #FFF0F0; border: 1px solid #FFCCCC; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #E24B4A; margin-top: 10px; display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">−</div>
+      <div>
+        <div class="title">Canal Moins — Churn Prediction</div>
+        <div class="subtitle">30-day churn risk scoring for Canal Moins subscribers</div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Subscriber ID</label>
+      <input type="text" id="sub_id" value="sub_00001234" />
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Viewing behaviour</div>
+
+    <div class="grid2">
+      <div class="field">
+        <label>Sessions last 30 days</label>
+        <input type="number" id="sessions_30d" value="8" min="0" />
+      </div>
+      <div class="field">
+        <label>Sessions last 7 days</label>
+        <input type="number" id="sessions_7d" value="3" min="0" />
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="field">
+        <label>Total watch time (hours)</label>
+        <input type="number" id="watch_time" value="12.5" min="0" step="0.5" />
+      </div>
+      <div class="field">
+        <label>Unique content watched</label>
+        <input type="number" id="content_count" value="7" min="0" />
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="field">
+        <label>Avg completion rate (0–1)</label>
+        <input type="number" id="completion" value="0.72" min="0" max="1" step="0.01" />
+      </div>
+      <div class="field">
+        <label>Avg engagement score (0–100)</label>
+        <input type="number" id="engagement" value="65" min="0" max="100" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Days since last watch (0–30)</label>
+      <input type="number" id="days_since" value="3" min="0" max="30" />
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Subscriber profile</div>
+
+    <div class="grid3">
+      <div class="field">
+        <label>Plan type</label>
+        <select id="plan">
+          <option value="basic">Basic</option>
+          <option value="plus" selected>Plus</option>
+          <option value="elite">Elite</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Country</label>
+        <select id="country">
+          <option value="FR" selected>France</option>
+          <option value="BE">Belgium</option>
+          <option value="CH">Switzerland</option>
+          <option value="LU">Luxembourg</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Favourite device</label>
+        <select id="device">
+          <option value="smart_tv" selected>Smart TV</option>
+          <option value="mobile">Mobile</option>
+          <option value="web">Web</option>
+          <option value="tablet">Tablet</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="btn" id="btn" onclick="predict()">Predict churn risk →</button>
+
+    <div class="error" id="err">
+      ⚠️ API not reachable — make sure uvicorn is running on port 8000
+    </div>
+
+    <div class="result" id="result">
+      <div class="result-top">
+        <div>
+          <div class="prob-big" id="prob-text">89%</div>
+          <div style="font-size:13px;color:#888;margin-top:2px">churn probability</div>
+        </div>
+        <span class="risk-badge" id="risk-label">HIGH RISK</span>
+      </div>
+      <div class="bar-wrap"><div class="bar" id="bar" style="width:0%"></div></div>
+      <div class="rec" id="rec-text"></div>
+      <div class="meta" id="meta-text"></div>
+    </div>
+  </div>
+
+  <script>
+    async function predict() {
+      const btn = document.getElementById('btn');
+      const err = document.getElementById('err');
+      const result = document.getElementById('result');
+      err.style.display = 'none';
+      result.style.display = 'none';
+      btn.textContent = 'Predicting...';
+      btn.disabled = true;
+
+      const payload = {
+        subscriber_id: document.getElementById('sub_id').value || 'sub_demo',
+        total_sessions_30d: parseInt(document.getElementById('sessions_30d').value),
+        total_watch_time_h: parseFloat(document.getElementById('watch_time').value),
+        avg_completion_rate: parseFloat(document.getElementById('completion').value),
+        avg_engagement_score: parseFloat(document.getElementById('engagement').value),
+        days_since_last_watch: parseInt(document.getElementById('days_since').value),
+        sessions_last_7d: parseInt(document.getElementById('sessions_7d').value),
+        unique_content_count: parseInt(document.getElementById('content_count').value),
+        plan_type: document.getElementById('plan').value,
+        country: document.getElementById('country').value,
+        favourite_device: document.getElementById('device').value,
+      };
+
+      try {
+        const resp = await fetch('http://localhost:8000/predict', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await resp.json();
+
+        const risk = data.churn_risk;
+        const prob = Math.round(data.churn_probability * 100);
+        const cls = risk === 'HIGH' ? 'high' : risk === 'MEDIUM' ? 'medium' : 'low';
+
+        result.className = 'result ' + cls;
+        result.style.display = 'block';
+        document.getElementById('prob-text').textContent = prob + '%';
+        document.getElementById('risk-label').textContent = risk + ' RISK';
+        document.getElementById('bar').style.width = prob + '%';
+        document.getElementById('rec-text').textContent = data.recommendation;
+        document.getElementById('meta-text').textContent =
+          'Subscriber: ' + data.subscriber_id +
+          ' · Model v' + data.model_version +
+          ' · ' + data.predicted_at.slice(0,16).replace('T', ' ') + ' UTC';
+
+      } catch(e) {
+        err.style.display = 'block';
+      }
+
+      btn.textContent = 'Predict churn risk →';
+      btn.disabled = false;
+    }
+  </script>
+</body>
+</html>
