@@ -1,0 +1,19 @@
+# Logs
+bloc2-architecture/docker/logs/
+bloc2-architecture/docker/dags/__pycache__/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Models (trop lourds pour GitHub)
+bloc4-mlops/models/churn_model.pkl
+
+# OS
+.DS_Store
+Thumbs.db
