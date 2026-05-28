@@ -1,5 +1,5 @@
-# Canal Moins — Master Thesis
-## JHEDA Program | Mines de Paris × Albert School
+# Canal Moins | Master Thesis
+## JHEDA Program | Mines de Paris & Albert School
 
 > **"Plus de contenu. Moins cher."**
 > *Any resemblance to an existing premium French streaming platform is purely intentional.*
@@ -26,7 +26,7 @@ canal-moins-thesis/
 
 ---
 
-## Block 1 — Data Governance
+## Block 1 : Data Governance
 
 **Objective:** Design a complete data governance policy for Canal Moins.
 
@@ -38,7 +38,7 @@ canal-moins-thesis/
 
 ---
 
-## Block 2 — Cloud Data Architecture
+## Block 2 : Cloud Data Architecture
 
 **Objective:** Design, deploy and document a complete data infrastructure.
 
@@ -65,7 +65,7 @@ terraform apply -var="redshift_password=YourPass123!"
 
 ---
 
-## Block 3 — Real-Time Data Pipeline
+## Block 3 : Real-Time Data Pipeline
 
 **Objective:** Build, automate and monitor a pipeline handling large volumes of streaming data.
 
@@ -92,7 +92,7 @@ pytest tests/test_pipeline.py -v
 
 ---
 
-## Block 4 — MLOps & Churn Prediction
+## Block 4 : MLOps & Churn Prediction
 
 **Objective:** Industrialise an end-to-end AI solution — training, deployment, retraining, drift monitoring.
 
@@ -145,10 +145,9 @@ pytest tests/test_model.py -v
 
 ## Author
 
-**Sasha Castel** — JHEDA Program  
+**Sasha Castel**   
 Mines de Paris × Albert School  
 
 ---
 
 *Canal Moins is a fictional company created for academic purposes.*  
-*"We know you'll cancel — we just won't let you."*
