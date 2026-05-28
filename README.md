@@ -1,2 +1,2 @@
-# canal-moins-thesis
-aster Thesis — Canal Moins Data Platform | JHEDA Program
+# Canal Moins Thesis
+Master Thesis — Canal Moins Data Platform | JHEDA Program
